@@ -159,6 +159,11 @@ def write_parser(parser: ArgumentParser) -> None:
         action='store_true',
         help=_('Use hardware acceleration for writing video')
     )
+    other_options.add_argument(
+        '--on_device_hwaccel',
+        action='store_true',
+        help=_('Use on device hardware acceleration for writing video')
+    )
 
     parser.set_defaults(func=write)
 

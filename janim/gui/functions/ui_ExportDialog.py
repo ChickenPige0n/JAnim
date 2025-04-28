@@ -93,7 +93,18 @@ class Ui_ExportDialog(object):
 
         self.hlayout_hwaccel.addWidget(self.ckb_hwaccel)
 
+        self.hlayout_on_device_hwaccel = QHBoxLayout()
+        self.hlayout_on_device_hwaccel.setObjectName(u"hlayout_on_device_hwaccel")
+        self.spacer_on_device_hwaccel = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
+        self.hlayout_on_device_hwaccel.addItem(self.spacer_on_device_hwaccel)
+
+        self.ckb_on_device_hwaccel = QCheckBox(ExportDialog)
+        self.ckb_on_device_hwaccel.setObjectName(u"ckb_on_device_hwaccel")
+
+        self.hlayout_on_device_hwaccel.addWidget(self.ckb_on_device_hwaccel)
+
+        self.verticalLayout.addLayout(self.hlayout_on_device_hwaccel)
         self.verticalLayout.addLayout(self.hlayout_hwaccel)
 
         self.hlayout_open = QHBoxLayout()
@@ -138,6 +149,7 @@ class Ui_ExportDialog(object):
         self.label_path.setText(QCoreApplication.translate("ExportDialog", u"_", None))
         self.btn_browse.setText(QCoreApplication.translate("ExportDialog", u"...", None))
         self.ckb_hwaccel.setText(QCoreApplication.translate("ExportDialog", u"_", None))
+        self.ckb_on_device_hwaccel.setText(QCoreApplication.translate("ExportDialog", u"_", None))
         self.ckb_open.setText(QCoreApplication.translate("ExportDialog", u"_", None))
     # retranslateUi
 

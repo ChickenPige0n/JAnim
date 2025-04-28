@@ -158,6 +158,7 @@ def write(args: Namespace) -> None:
                              f'{name}.{args.format}'),
                 use_pbo=not args.disable_pbo,
                 hwaccel=args.hwaccel,
+                on_device=args.on_device_hwaccel,
                 _keep_temp=video_with_audio
             )
             if open_result and not video_with_audio:
